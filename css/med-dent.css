@@ -1,0 +1,22 @@
+body {
+    background-color: #fc891b;
+    margin: 0;
+}
+
+.header {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Helvetica';
+}
+
+.header a {
+    text-decoration: none;
+    color: #4c4c4c;
+    padding: 15px;
+}
+
+.menu-items {
+    padding: 25px;
+}
