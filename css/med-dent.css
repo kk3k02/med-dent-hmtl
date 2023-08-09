@@ -96,5 +96,41 @@ body {
     height: 500px;
 }
 
+.box3 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    color: #4c4c4c;
+}
+
+.box3-item {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 10px;
+    align-items: center;
+}
+
+.box3-item a {
+    margin: 5px;
+    text-decoration: none;
+    color: #4c4c4c;
+}
+
+.box3-item a:hover {
+    color: #fc891b;
+}
+
+.box3-item span {
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #4c4c4c;
+    color: whitesmoke;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
 
 
