@@ -97,3 +97,14 @@ body {
 .box2-info a:hover {
     color: #fc891b;
 }
+
+.box3 {
+    background-color: whitesmoke;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.box3-item {
+    margin: 20px;
+}
