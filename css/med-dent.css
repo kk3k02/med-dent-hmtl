@@ -4,8 +4,12 @@ body {
     font-family: 'Helvetica';
 }
 
+* {
+    box-sizing: content-box;
+  }
+
 .header {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -46,6 +50,24 @@ body {
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
+.box1 img:hover {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+    20% { transform: translate(-1.5px, 0px) rotate(0.5deg); }
+    30% { transform: translate(1.5px, 1px) rotate(0deg); }
+    40% { transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+    50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+    60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+    70% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); }
+    80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+    90% { transform: translate(0.5px, 1px) rotate(0deg); }
+    100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
+  }  
+
 .box1-item {
     width: 200px;
     display: flex;
@@ -59,22 +81,22 @@ body {
     font-size: 20px;
 }
 
+.box1-item span:hover {
+    color: whitesmoke;
+}
+
 .box2 {
-    display: flex;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .box2-item {
-    margin: 50px;
+    padding: 50px 50px 75px 50px;
     color: #4c4c4c;
     width: 600px;
     font-size: 18px;
-}
-
-.box2-item hr {
-    background-color: #4c4c4c;
-    border-color: #4c4c4c;
-    border-radius: 20%;
-    height: 3px;
 }
 
 .box2-item span {
@@ -83,17 +105,10 @@ body {
 }
 
 .box2-item p {
-    background-color: rgba(245, 245, 245, 0.3);
+    background-color: rgba(245, 245, 245, 0.75);
     border-radius: 2%;
     padding: 10px;
-    height: 470px;
-}
-
-.box2-item img {
-    padding: 10px;
-    border-radius: 10%;
-    width: 600px;
-    height: 500px;
+    height: 485px;
 }
 
 .box3 {
@@ -101,6 +116,7 @@ body {
     display: flex;
     justify-content: center;
     color: #4c4c4c;
+    padding: 40px;
 }
 
 .box3-item {
@@ -128,7 +144,7 @@ body {
 .footer {
     background-color: #4c4c4c;
     color: whitesmoke;
-    padding: 25px;
+    padding: 15px;
     display: flex;
     justify-content: center;
 }
