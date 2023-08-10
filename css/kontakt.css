@@ -32,3 +32,20 @@ body {
 .menu-items {
     padding: 25px;
 }
+
+.box1 {
+    background-color: #4c4c4c;
+    margin-top: 70px;
+    padding: 80px 0 80px 0;
+}
+
+.box1-item {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+.box1-item:hover {
+    color: #fc891b;
+}
