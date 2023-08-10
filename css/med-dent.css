@@ -108,13 +108,13 @@ body {
     flex-direction: column;
     margin: 30px;
     padding: 10px;
-    align-items: center;
 }
 
 .box3-item a {
     margin: 5px;
     text-decoration: none;
     color: #4c4c4c;
+    display: block;
 }
 
 .box3-item a:hover {
