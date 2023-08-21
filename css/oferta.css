@@ -64,12 +64,15 @@ body {
     background-color: rgba(255, 255, 255, 1);  
 }
 
-.dentist-img {
+.service-photo {
     display: flex;
+    width: 100%;
+    height: auto;
 }
 
-.dentist-img img{
-    padding: 20px;
-    border-radius: 10%;
+.service-photo img {
+    width: 100%;
+    height: auto;
 }
+
 
