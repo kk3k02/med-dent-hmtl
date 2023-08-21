@@ -1,0 +1,29 @@
+.footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    color: #4c4c4c;
+    padding: 40px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-item a {
+    margin: 5px;
+    text-decoration: none;
+    color: #4c4c4c;
+    display: block;
+}
+
+.footer-item a:hover {
+    color: #fc891b;
+}
+
+.footer-item span {
+    font-size: 15px;
+}

@@ -19,16 +19,16 @@ body {
     width: 100%;
 }
 
-.header a {
-    text-decoration: none;
-    color: #4c4c4c;
-    padding: 15px;
-}
-
 .header a:hover {
     color: #fc891b;
 }
 
 .menu-items {
     padding: 25px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #4c4c4c;
+    padding: 15px;
 }
