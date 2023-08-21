@@ -8,6 +8,11 @@ body {
     box-sizing: content-box;
   }
 
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
 .box1 {
     margin-top: 70px;
     display: flex;
