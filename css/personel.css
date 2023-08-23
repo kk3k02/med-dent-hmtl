@@ -2,6 +2,7 @@ body {
     background-color: #fc891b;
     margin: 0;
     font-family: 'Helvetica';
+    color: #4c4c4c;
 }
 
 * {
@@ -28,4 +29,31 @@ body {
     font-weight: bold;
     font-size: 25px;
     padding: 0 200px 0 200px;
+}
+
+.box2 {
+    display: flex;
+    background-color: white;
+}
+
+.box2 img {
+    background-color: #fc891b;
+    border-radius: 50%;
+    padding-top: 10px;
+    margin: 15px;
+    height: 400px;
+}
+
+.description {
+    margin: 25px;
+}
+
+.description span {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px 0 20px 0;
+}
+
+.description p {
+    margin: 30px 30px 10px 0;
 }
