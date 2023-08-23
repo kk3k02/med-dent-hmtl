@@ -7,3 +7,25 @@ body {
 * {
     box-sizing: content-box;
   }
+
+.box1 {
+    margin-top: 94px;
+    padding: 30px;
+    display: flex;
+    background-color: #4c4c4c;
+    align-items: center;
+    
+}
+
+.vertical-line {
+    border-left: 4px solid white;
+    height: 75px; 
+    margin: 0 auto;
+}
+
+.profession {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0 200px 0 200px;
+}
