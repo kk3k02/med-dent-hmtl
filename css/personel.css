@@ -24,7 +24,7 @@ body {
     margin: 0 auto;
 }
 
-.profession {
+.profession-box1 {
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -34,6 +34,7 @@ body {
 .box2 {
     display: flex;
     background-color: white;
+    padding-bottom: 22px;
 }
 
 .box2 img {
@@ -56,4 +57,17 @@ body {
 
 .description p {
     margin: 30px 30px 10px 0;
+}
+
+.box3 {
+    display: flex;
+    background-color: #4c4c4c;
+    align-items: center;
+}
+
+.profession-box2 {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 55px 100px 55px 100px;
 }
