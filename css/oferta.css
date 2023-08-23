@@ -22,15 +22,16 @@ section {
     align-items: center;
 }
 
-.services span {
+.services-span {
     background-color: #4c4c4c;
     color: whitesmoke;  
-    font-size: 25px;
+    font-size: 20px;
     width: 100%; 
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .services p {
@@ -40,7 +41,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px 0 20px;
+    padding: 27px 20px 27px 20px;
     margin-top: 0;
 }
 
@@ -55,14 +56,21 @@ section {
     background-color: rgba(255, 255, 255, 0.7);    
 }
 
-.full-service-item img {
-    margin: 10px;
+.white {
+    background-color: white;
 }
 
-.full-service-item p {
-    background-color: rgba(255, 255, 255, 0.7);
-    height: 100%;
-    margin: 0;
+.whitesmoke {
+    background-color: whitesmoke;
+}
+
+.full-service-item li,
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.full-service-item img {
+    margin: 10px;
 }
 
 .full-service-item:hover {
@@ -80,4 +88,16 @@ section {
     height: auto;
 }
 
+.container {
+    margin-bottom: 100px;
+}
 
+.profession {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #4c4c4c;
+    background-color: whitesmoke;
+    border-radius: 20%;
+}
