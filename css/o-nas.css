@@ -9,7 +9,7 @@ body {
     box-sizing: content-box;
   }
 
-a {
+.box1 a {
     text-decoration: none;
     padding: 10px;
 }
