@@ -9,13 +9,25 @@ body {
     box-sizing: content-box;
   }
 
+section {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
 .box1 a {
     text-decoration: none;
     padding: 10px;
 }
 
 .box1 {
-    margin-top: 70px;
     display: flex;
     justify-content: space-around;
     background-color: #4c4c4c;
@@ -67,16 +79,21 @@ body {
 }
 
 .box2 {
-    background-image: url("../images/banner.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.box2 img {
+    width: 1000px;
+    height: auto;
 }
 
 .box2-item {
-    padding: 50px 50px 75px 50px;
     color: #4c4c4c;
     width: 600px;
+    height: 600px;
+    padding-top: 50px;
     font-size: 18px;
 }
 
@@ -86,7 +103,7 @@ body {
 }
 
 .box2-item p {
-    background-color: rgba(245, 245, 245, 0.75);
+    background-color: rgb(255, 255, 255, 0.75);
     border-radius: 2%;
     padding: 10px;
     height: 485px;
