@@ -7,11 +7,36 @@ body {
 
 * {
     box-sizing: content-box;
-  }
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+h2 {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 0 0 5px 0;
+}
+
+.box1, .box2, .box3, .box4 {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    overflow-x: hidden;
+    scroll-snap-align: start;
+}
 
 .box1 {
     margin-top: 94px;
-    padding: 30px;
     display: flex;
     background-color: #4c4c4c;
     align-items: center;
@@ -19,7 +44,7 @@ body {
 }
 
 .vertical-line {
-    border-left: 4px solid white;
+    border-left: 7px solid white;
     height: 75px; 
     margin: 0 auto;
 }
@@ -27,14 +52,13 @@ body {
 .profession-box1 {
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 50px;
     padding: 0 200px 0 200px;
 }
 
 .box2 {
     display: flex;
     background-color: white;
-    padding-bottom: 22px;
 }
 
 .box2 img {
@@ -56,7 +80,14 @@ body {
 }
 
 .description p {
-    margin: 30px 40px 10px 0;
+    margin: 30px 150px 10px 0;
+}
+
+.profession-box2 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 55px 100px 55px 100px;
 }
 
 .box3 {
@@ -65,17 +96,9 @@ body {
     align-items: center;
 }
 
-.profession-box2 {
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 55px 100px 55px 100px;
-}
-
 .box4 {
     display: flex;
     background-color: white;
-    padding-bottom: 40px;
 }
 
 .box4 img {
@@ -84,13 +107,4 @@ body {
     height: 400px; 
     padding-top: 10px;
     margin: 15px;  
-}
-
-h2 {
-    margin-bottom: 0;
-    padding: 0;
-}
-
-h4 {
-    margin: 0 0 5px 0;
 }
