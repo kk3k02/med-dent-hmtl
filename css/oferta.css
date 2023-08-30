@@ -8,96 +8,58 @@ body {
     box-sizing: content-box;
   }
 
-section {
-    margin-bottom: 20px;
-}
-
-.services {
-    margin-top: 94px;
-}
-
-.services section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.services-span {
-    background-color: #4c4c4c;
-    color: whitesmoke;  
-    font-size: 20px;
-    width: 100%; 
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
-
-.services p {
-    background-color: whitesmoke;
-    color: #4c4c4c;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 27px 20px 27px 20px;
-    margin-top: 0;
-}
-
-.full-service {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.full-service-item {
-    flex: 1 0 25%; 
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.7);    
-}
-
-.white {
-    background-color: white;
-}
-
-.whitesmoke {
-    background-color: whitesmoke;
-}
-
-.full-service-item li,
-p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.full-service-item img {
-    margin: 10px;
-}
-
-.full-service-item:hover {
-    background-color: rgba(255, 255, 255, 1);  
-}
-
-.service-photo {
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-
-.service-photo img {
-    width: 100%;
-    height: auto;
-}
-
 .container {
-    margin-bottom: 100px;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
 }
 
 .profession {
-    margin: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.description {
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.description img {
+    height: 600px;
+    width: auto;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+h1 {
+    color: #4c4c4c;
+    font-size: 50px;
+}
+
+p {
+    color: #4c4c4c;
+    font-size: 20px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #fc891b;
+    color: white;
+    text-align: center;
     padding: 10px;
     font-weight: bold;
-    font-size: xx-large;
-    color: #4c4c4c;
-    background-color: whitesmoke;
-    border-radius: 20%;
+    font-size: 17px;
 }
