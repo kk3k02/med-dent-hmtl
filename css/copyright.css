@@ -1,7 +1,15 @@
+/* copyright */
 .copyright {
     background-color: #4c4c4c;
     color: whitesmoke;
-    padding: 15px;
     display: flex;
     justify-content: center;
+}
+
+/* 1920px width settings */
+@media (max-width: 1920px){
+    .copyright {
+        padding: 1%;
+        font-size: 100%;
+    }
 }

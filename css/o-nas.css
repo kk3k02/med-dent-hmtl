@@ -1,3 +1,4 @@
+/* General */
 html {
     scroll-behavior: smooth;
 }
@@ -9,45 +10,40 @@ body {
     color: #4c4c4c;
 }
 
-* {
-    box-sizing: content-box;
-  }
-
+/* Section */
 section {
-    min-height: 100vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
-    scroll-snap-align: start;
 }
 
-.container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-}
-
-.box1 a {
-    text-decoration: none;
-    padding: 10px;
-}
-
+/* box-1 */
 .box1 {
     display: flex;
     justify-content: space-around;
     background-color: #4c4c4c;
-    padding: 80px 0 80px 0;
 }
 
-.box1 img {
-    width: 130px;
-    height: 130px;
-    padding: 20px;
+/* box1-item */
+.box1-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1-item a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.box1-item img {
     border-radius: 30%;
     background-color: rgba(245, 245, 245, 0.9);
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
-.box1 img:hover {
+.box1-item img:hover {
     animation: shake 0.3s;
 }
 
@@ -63,52 +59,176 @@ section {
     80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
     90% { transform: translate(0.5px, 1px) rotate(0deg); }
     100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
-  }  
-
-.box1-item {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+}  
 
 .box1-item span {
-    margin: 30px;
     color: #fc891b;
-    font-size: 20px;
 }
 
 .box1-item span:hover {
     color: whitesmoke;
 }
 
+/* box-2 */
 .box2 {
     display: flex;
     align-items: center;
     background-color: whitesmoke;
 }
 
-.box2 img {
-    width: 1000px;
-    height: auto;
-}
-
 .box2-item {
     color: #4c4c4c;
-    width: 600px;
-    height: 600px;
-    padding-top: 50px;
-    font-size: 18px;
 }
 
 .box2-item span {
     color: whitesmoke;
-    font-size: 30px;
 }
 
 .box2-item p {
     background-color: rgb(255, 255, 255, 0.75);
     border-radius: 2%;
-    padding: 10px;
-    height: 485px;
+}
+
+/* 1920px width settings */
+@media (max-width: 1920px) {
+    .box1-item {
+        padding-top: 5%;
+    }
+
+    .box1-item img {
+        width: 60%;
+        aspect-ratio: 1/1;
+        padding: 10%;
+    }
+
+    .box1-item span {
+        font-size: 140%;
+        margin: 10%;
+    }
+
+    .box1-item a {
+        padding: 2%;
+    }
+
+    .box2 img {
+        width: 80%;
+        height: auto;
+        padding-right: 5%;
+    }
+
+    .box2-item {
+        padding-left: 5%;
+    }
+
+    .box2-item p {
+        padding: 5%;
+    }
+}
+
+/* 1536px width settings */
+@media (max-width: 1536px) {
+    .box1-item {
+        padding-top: 5%;
+    }
+
+    .box1-item img {
+        width: 60%;
+        aspect-ratio: 1/1;
+        padding: 10%;
+    }
+
+    .box1-item span {
+        font-size: 130%;
+        margin: 10%;
+    }
+
+    .box1-item a {
+        padding: 2%;
+    }
+
+    .box2 img {
+        width: 80%;
+        height: auto;
+        padding-right: 5%;
+    }
+
+    .box2-item {
+        padding-left: 5%;
+    }
+
+    .box2-item p {
+        padding: 5%;
+    }
+}
+
+/* 1366px width settings */
+@media (max-width: 1366px) {
+    .box1-item {
+        padding-top: 5%;
+    }
+
+    .box1-item img {
+        width: 60%;
+        aspect-ratio: 1/1;
+        padding: 10%;
+    }
+
+    .box1-item span {
+        font-size: 140%;
+        margin: 10%;
+    }
+
+    .box1-item a {
+        padding: 2%;
+    }
+
+    .box2 img {
+        width: 80%;
+        height: auto;
+        padding-right: 5%;
+    }
+
+    .box2-item {
+        padding-left: 5%;
+    }
+
+    .box2-item p {
+        padding: 5%;
+    }
+}
+
+/* 1280px width settings */
+@media (max-width: 1280px) {
+    .box1-item {
+        padding-top: 5%;
+    }
+
+    .box1-item img {
+        width: 60%;
+        aspect-ratio: 1/1;
+        padding: 10%;
+    }
+
+    .box1-item span {
+        font-size: 140%;
+        margin: 10%;
+    }
+
+    .box1-item a {
+        padding: 2%;
+    }
+
+    .box2 img {
+        width: 80%;
+        height: auto;
+        padding-right: 5%;
+    }
+
+    .box2-item {
+        padding-left: 5%;
+    }
+
+    .box2-item p {
+        padding: 5%;
+    }
 }
