@@ -1,3 +1,4 @@
+/* General */
 html {
     scroll-behavior: smooth;
 } 
@@ -10,60 +11,157 @@ body {
 
 * {
     box-sizing: content-box;
-  }
-
-.container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
 }
 
+h1 {
+    color: #4c4c4c;
+}
+
+p {
+    color: #4c4c4c;
+}
+
+/* section */
 section {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
 }
 
+/* profession */
 .profession {
+    display: flex;
+    align-items: center;
     color: white;
     font-weight: bold;
-    font-size: 100px;
 }
 
+/* description */
 .description {
     background-color: whitesmoke;
     display: flex;
 }
 
-.description img {
-    height: 600px;
-    width: auto;
-}
-
+/* wrap */
 .wrap {
     display: flex;
     flex-direction: column;
-    padding: 50px;
 }
 
-h1 {
-    color: #4c4c4c;
-    font-size: 50px;
-}
-
-p {
-    color: #4c4c4c;
-    font-size: 20px;
-}
-
+/* button */
 .button {
     text-decoration: none;
     background-color: #fc891b;
     color: white;
     text-align: center;
-    padding: 10px;
     font-weight: bold;
-    font-size: 17px;
+}
+
+/* 1920px width settings */
+@media (max-width: 1920px) {
+    .profession {
+        font-size: 7em;
+    }
+
+    .description img {
+        width: 200%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    p {
+        font-size: 1.4em;
+        padding: 0 5% 0 0;
+    }
+
+    .button {
+        padding: 1.5%;
+        font-size: 1.5em;
+        margin-right: 5%;
+    }
+}
+
+/* 1600px width settings */
+@media (max-width: 1600px) {
+    .profession {
+        font-size: 6em;
+    }
+
+    .description img {
+        width: 200%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+        padding: 0 5% 0 0;
+    }
+
+    .button {
+        padding: 1.5%;
+        font-size: 1.2em;
+        margin-right: 5%;
+    }
+}
+
+/* 1366PX width settings */
+@media (max-width: 1366px) {
+    .profession {
+        font-size: 5em;
+    }
+
+    .description img {
+        width: 200%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        padding: 0 5% 0 0;
+    }
+
+    .button {
+        padding: 1.5%;
+        font-size: 1.1em;
+        margin-right: 5%;
+    }
+}
+
+/* 1280px width settings */
+@media (max-width: 1280px) {
+    .profession {
+        font-size: 6em;
+    }
+
+    .description img {
+        width: 200%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1em;
+        padding: 0 5% 0 0;
+    }
+
+    .button {
+        padding: 1.5%;
+        font-size: 1.1em;
+        margin-right: 5%;
+    }
 }
