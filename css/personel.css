@@ -13,12 +13,6 @@ body {
     box-sizing: content-box;
 }
 
-.container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-}
-
 h2 {
     margin-bottom: 0;
     padding: 0;
