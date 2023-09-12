@@ -65,7 +65,7 @@ section {
     }
 
     .description img {
-        width: 200%;
+        width: 100%;
         height: auto;
     }
 
@@ -88,11 +88,11 @@ section {
 /* 1281-1920 px width settings */
 @media (min-width: 1281px) and (max-width: 1920px) {
     .profession {
-        font-size: 6em;
+        font-size: 5em;
     }
 
     .description img {
-        width: 200%;
+        width: 100%;
         height: auto;
     }
 
@@ -101,13 +101,13 @@ section {
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.3em;
         padding: 0 5% 0 0;
     }
 
     .button {
         padding: 1.5%;
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-right: 5%;
     }
 }
@@ -115,26 +115,26 @@ section {
 /* 1921-2560 px width settings */
 @media (min-width: 1921px) and (max-width: 2560px) {
     .profession {
-        font-size: 8em;
+        font-size: 6em;
     }
 
     .description img {
-        width: 200%;
+        width: 100%;
         height: auto;
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2.7em;
     }
 
     p {
-        font-size: 2em;
+        font-size: 1.5em;
         padding: 0 5% 0 0;
     }
 
     .button {
         padding: 1.5%;
-        font-size: 2em;
+        font-size: 1.5em;
         margin-right: 5%;
     }
 }
@@ -142,26 +142,26 @@ section {
 /* 2561-3840 px width settings */
 @media (min-width: 2561px) and (max-width: 3840px) {
     .profession {
-        font-size: 10em;
+        font-size: 8em;
     }
 
     .description img {
-        width: 200%;
+        width: 100%;
         height: auto;
     }
 
     h1 {
-        font-size: 5em;
+        font-size: 4em;
     }
 
     p {
-        font-size: 3em;
+        font-size: 1.85em;
         padding: 0 5% 0 0;
     }
 
     .button {
         padding: 1.5%;
-        font-size: 3em;
+        font-size: 1.85em;
         margin-right: 5%;
     }
 }
@@ -173,7 +173,7 @@ section {
     }
 
     .description img {
-        width: 200%;
+        width: 100%;
         height: auto;
     }
 
@@ -182,13 +182,13 @@ section {
     }
 
     p {
-        font-size: 3em;
+        font-size: 2.5em;
         padding: 0 5% 0 0;
     }
 
     .button {
         padding: 1.5%;
-        font-size: 3em;
+        font-size: 2.5em;
         margin-right: 5%;
     }
 }
