@@ -6,10 +6,42 @@
     justify-content: center;
 }
 
-/* 1920px width settings */
-@media (max-width: 1920px){
+/* 768-1280 px width settings */
+@media (min-width: 768px) and (max-width: 1280px) {
     .copyright {
         padding: 1%;
         font-size: 100%;
+    }
+}
+
+/* 1281-1920 px width settings */
+@media (min-width: 1281px) and (max-width: 1920px) {
+    .copyright {
+        padding: 1%;
+        font-size: 100%;
+    }
+}
+
+/* 1921-2560 px width settings */
+@media (min-width: 1921px) and (max-width: 2560px) {
+    .copyright {
+        padding: 1%;
+        font-size: 120%;
+    }
+}
+
+/* 2561-3840 px width settings */
+@media (min-width: 2561px) and (max-width: 3840px) {
+    .copyright {
+        padding: 1%;
+        font-size: 200%;
+    }
+}
+
+/*  >= 3841px width settings */
+@media (min-width: 3841px) {
+    .copyright {
+        padding: 1%;
+        font-size: 350%;
     }
 }
