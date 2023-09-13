@@ -1,0 +1,11 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fc891b;
+    margin: 0;
+    font-family: 'Helvetica';
+    color: #4c4c4c;
+}
