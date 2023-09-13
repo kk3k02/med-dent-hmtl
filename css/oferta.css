@@ -61,38 +61,92 @@ section {
 /* 768-1280 px width settings */
 @media (min-width: 768px) and (max-width: 1280px) {
     .profession {
-        font-size: 4.5em;
+        font-size: 4em;
     }
 
     .description img {
-        width: 100%;
+        width: 150%;
         height: auto;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     p {
-        font-size: 1em;
+        font-size: 0.9em;
         padding: 0 5% 0 0;
     }
 
     .button {
         padding: 1.5%;
-        font-size: 1em;
+        font-size: 0.9em;
         margin-right: 5%;
     }
 }
 
-/* 1281-1920 px width settings */
-@media (min-width: 1281px) and (max-width: 1920px) {
+/* 1281-1366 px width settings */
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .profession {
+        font-size: 3.3em;
+    }
+
+    .description img {
+        width: 180%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.55em;
+    }
+
+    p {
+        font-size: 0.95em;
+        padding: 0 5% 0 0;
+    }
+
+    .button {
+        padding: 1.5%;
+        font-size: 0.95em;
+        margin-right: 5%;
+    }
+}
+
+/* 1367-1536 px width settings */
+@media (min-width: 1367px) and (max-width: 1536px) {
+    .profession {
+        font-size: 4em;
+    }
+
+    .description img {
+        width: 180%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+        padding: 0 5% 0 0;
+    }
+
+    .button {
+        padding: 1.5%;
+        font-size: 1.1em;
+        margin-right: 5%;
+    }
+}
+
+/* 1537-1920 px width settings */
+@media (min-width: 1537px) and (max-width: 1920px) {
     .profession {
         font-size: 5em;
     }
 
     .description img {
-        width: 100%;
+        width: 185%;
         height: auto;
     }
 
@@ -115,11 +169,11 @@ section {
 /* 1921-2560 px width settings */
 @media (min-width: 1921px) and (max-width: 2560px) {
     .profession {
-        font-size: 6em;
+        font-size: 6.5em;
     }
 
     .description img {
-        width: 100%;
+        width: 190%;
         height: auto;
     }
 
@@ -128,13 +182,13 @@ section {
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.7em;
         padding: 0 5% 0 0;
     }
 
     .button {
         padding: 1.5%;
-        font-size: 1.5em;
+        font-size: 1.7em;
         margin-right: 5%;
     }
 }
@@ -146,7 +200,7 @@ section {
     }
 
     .description img {
-        width: 100%;
+        width: 190%;
         height: auto;
     }
 
@@ -155,13 +209,13 @@ section {
     }
 
     p {
-        font-size: 1.85em;
+        font-size: 2.2em;
         padding: 0 5% 0 0;
     }
 
     .button {
         padding: 1.5%;
-        font-size: 1.85em;
+        font-size: 2.2em;
         margin-right: 5%;
     }
 }
@@ -169,26 +223,26 @@ section {
 /*  >= 3841px width settings */
 @media (min-width: 3841px) {
     .profession {
-        font-size: 10em;
+        font-size: 8em;
     }
 
     .description img {
-        width: 100%;
+        width: 200%;
         height: auto;
     }
 
     h1 {
-        font-size: 5em;
+        font-size: 4em;
     }
 
     p {
-        font-size: 2.5em;
+        font-size: 3em;
         padding: 0 5% 0 0;
     }
 
     .button {
         padding: 1.5%;
-        font-size: 2.5em;
+        font-size: 3em;
         margin-right: 5%;
     }
 }
