@@ -96,13 +96,13 @@ section {
     }
 
     .box1-item img {
-        width: 60%;
+        width: 40%;
         aspect-ratio: 1/1;
         padding: 10%;
     }
 
     .box1-item span {
-        font-size: 140%;
+        font-size: 100%;
         margin: 10%;
     }
 
@@ -126,8 +126,81 @@ section {
     }
 }
 
-/* 1281-1920 px width settings */
-@media (min-width: 1281px) and (max-width: 1920px) {
+/* 1281-1366 px width settings */
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .box1-item {
+        padding-top: 5%;
+    }
+
+    .box1-item img {
+        width: 45%;
+        aspect-ratio: 1/1;
+        padding: 10%;
+    }
+
+    .box1-item span {
+        font-size: 125%;
+        margin: 10%;
+    }
+
+    .box1-item a {
+        padding: 2%;
+    }
+
+    .box2 img {
+        width: 115%;
+        height: auto;
+        padding-right: 5%;
+    }
+
+    .box2-item {
+        padding-left: 5%;
+    }
+
+    .box2-item p {
+        padding: 5%;
+        font-size: 80%;
+    }
+}
+
+/* 1367-1536 px width settings */
+@media (min-width: 1367px) and (max-width: 1536px) {
+    .box1-item {
+        padding-top: 5%;
+    }
+
+    .box1-item img {
+        width: 50%;
+        padding: 10%;
+    }
+
+    .box1-item span {
+        font-size: 125%;
+        margin: 10%;
+    }
+
+    .box1-item a {
+        padding: 2%;
+    }
+
+    .box2 img {
+        width: 80%;
+        height: auto;
+        padding-right: 5%;
+    }
+
+    .box2-item {
+        padding-left: 5%;
+    }
+
+    .box2-item p {
+        padding: 5%;
+        font-size: 80%;
+    }
+}
+
+/* 1537-1920 px width settings */
+@media (min-width: 1537px) and (max-width: 1920px) {
     .box1-item {
         padding-top: 5%;
     }

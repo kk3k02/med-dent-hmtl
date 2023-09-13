@@ -8,12 +8,7 @@ body {
     font-family: 'Helvetica';
 }
 
-* {
-    box-sizing: content-box;
-  }
-
 .container {
-    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
 }
@@ -22,19 +17,15 @@ section {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    scroll-snap-align: start;
 }
 
 .box1 {
     background-color: #4c4c4c;
-    margin-top: 70px;
-    padding: 80px 0 80px 0;
     display: flex;
 }
 
 .box1-item {
     color: whitesmoke;
-    font-size: 100px;
 }
 
 .box1-item:hover {
@@ -49,44 +40,23 @@ section {
 .box2-item {
     display: flexbox;
     background-color: whitesmoke;
-    width: 300px;
-    height: 250px;
-    margin: 50px;
     border-radius: 20%;
     text-align: center;
     border-color: #4c4c4c;
 }
 
 .box2-title {
-    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
 
-.box2-title span {
-    padding: 17px;
-}
-
-.box2-title img {
-    width: 50px;
-    height: 50px;
-}
-
 hr {
-    width: 230px;
-    height: 2px;
     background-color: #4c4c4c;
     border-color: #4c4c4c;
 }
 
 .box2-info {
     display: grid;
-    margin-top: 20px;
-    padding: 5px;
-}
-
-.box2-info span {
-    padding: 5px;
 }
 
 .box2-info a {
@@ -100,11 +70,55 @@ hr {
 
 .box3 {
     background-color: whitesmoke;
-    padding: 40px;
     display: flex;
     justify-content: center;
 }
 
-.box3-item {
-    margin: 20px;
+/* 768-1280 px width settings */
+@media (min-width: 768px) and (max-width: 1280px) {
+}
+
+/* 1281-1920 px width settings */
+@media (min-width: 1281px) and (max-width: 1920px) {
+}
+
+/* 1921-2560 px width settings */
+@media (min-width: 1921px) and (max-width: 2560px) {
+}
+
+/* 2561-3840 px width settings */
+@media (min-width: 2561px) and (max-width: 3840px) {
+}
+
+/*  >= 3841px width settings */
+@media (min-width: 3841px) {
+    .box1-item {
+        font-size: 10em;
+    }
+
+    .box2-item {
+        padding: 2%;
+    }
+
+    .box2-item img {
+        width: 10%;
+        height: auto;
+    }
+
+    .box2-title span {
+        font-size: 3em;
+        padding: 3%;
+    }
+
+    .box2-info {
+        font-size: 3em;
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+
+    .box3-item img {
+        width: 80%;
+        height: 80%;
+        padding: 5%;
+    }
 }
