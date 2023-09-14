@@ -26,16 +26,16 @@ section {
     align-items: center;
 }
 
+/* box-span */
+.box-span {
+    color: whitesmoke;
+}
+
 /* wrapper */
 .wrapper {
     display: flex;
 }
 
-/* box1 */
-
-.box1 span {
-    color: whitesmoke;
-}
 /* colors */
 
 .dark {
@@ -53,31 +53,124 @@ section {
     text-align: center;
 }
 
-/* nfz */
+/* info */
 .info {
-    padding: 5%;
     background-color: #4c4c4c;
     color: #4c4c4c;
     font-weight: bold;
-    font-size: 1.5em;
 }
 
 .info-text {
     background-color: white;
-    padding: 3%;
 }
 
 
 /* 768-1280 px width settings */
 @media (min-width: 768px) and (max-width: 1280px) {
+    .banner {
+        font-size: 2.3em;
+    }
+
+    .box-span {
+        font-size: 2.2em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 15%;
+        margin: 1%;
+        font-size: 1em;
+    }
+
+    .info {
+        padding: 5%;
+        background-color: #4c4c4c;
+        color: #4c4c4c;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    .info-text {
+        background-color: white;
+        padding: 3%;
+    }
 }
 
 /* 1281-1366 px width settings */
 @media (min-width: 1281px) and (max-width: 1366px) {
+    .banner {
+        font-size: 2.4em;
+    }
+
+    .box-span {
+        font-size: 2.2em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 15%;
+        margin: 1%;
+        font-size: 1.2em;
+    }
+
+    .info {
+        padding: 5%;
+        background-color: #4c4c4c;
+        color: #4c4c4c;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    
+    .info-text {
+        background-color: white;
+        padding: 3%;
+    }
 }
 
 /* 1367-1536 px width settings */
 @media (min-width: 1367px) and (max-width: 1536px) {
+    .banner {
+        font-size: 2.6em;
+    }
+
+    .box-span {
+        font-size: 2.2em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 15%;
+        margin: 1%;
+        font-size: 1.2em;
+    }
+
+    .info {
+        padding: 5%;
+        background-color: #4c4c4c;
+        color: #4c4c4c;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    
+    .info-text {
+        background-color: white;
+        padding: 3%;
+    }
 }
 
 /* 1537-1920 px width settings */
@@ -101,16 +194,125 @@ section {
         margin: 1%;
         font-size: 1.1em;
     }
+
+    .info {
+        padding: 5%;
+        background-color: #4c4c4c;
+        color: #4c4c4c;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    
+    .info-text {
+        background-color: white;
+        padding: 3%;
+    }
 }
 
 /* 1921-2560 px width settings */
 @media (min-width: 1921px) and (max-width: 2560px) {
+    .banner {
+        font-size: 5em;
+    }
+
+    .box-span {
+        font-size: 4.5em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 15%;
+        margin: 1%;
+        font-size: 2em;
+    }
+
+    .info {
+        padding: 5%;
+        background-color: #4c4c4c;
+        color: #4c4c4c;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    .info-text {
+        background-color: white;
+        padding: 3%;
+    }
 }
 
 /* 2561-3840 px width settings */
 @media (min-width: 2561px) and (max-width: 3840px) {
+    .banner {
+        font-size: 7em;
+    }
+
+    .box-span {
+        font-size: 6em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 15%;
+        margin: 1%;
+        font-size: 3em;
+    }
+
+    .info {
+        padding: 5%;
+        background-color: #4c4c4c;
+        color: #4c4c4c;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    
+    .info-text {
+        background-color: white;
+        padding: 3%;
+    }
 }
 
 /*  >= 3841px width settings */
 @media (min-width: 3841px) {
+    .banner {
+        font-size: 7em;
+    }
+
+    .box-span {
+        font-size: 6em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 15%;
+        margin: 1%;
+        font-size: 3em;
+    }
+
+    .info {
+        padding: 5%;
+        background-color: #4c4c4c;
+        color: #4c4c4c;
+        font-weight: bold;
+        font-size: 3em;
+    }
+    
+    .info-text {
+        background-color: white;
+        padding: 3%;
+    }
 }
