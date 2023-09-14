@@ -59,14 +59,86 @@ section {
 
 /* 768-1280 px width settings */
 @media (min-width: 768px) and (max-width: 1280px) {
+    .banner {
+        font-size: 2.5em;
+    }
+
+    .box-span {
+        font-size: 2em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 7%;
+        margin: 1%;
+        font-size: 1em;
+    }
+
+    .short {
+        padding: 5%;
+        font-size: 1em;
+    }
 }
 
 /* 1281-1366 px width settings */
 @media (min-width: 1281px) and (max-width: 1366px) {
+    .banner {
+        font-size: 2.7em;
+    }
+
+    .box-span {
+        font-size: 2.3em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 7%;
+        margin: 1%;
+        font-size: 1.2em;
+    }
+
+    .short {
+        padding: 5%;
+        font-size: 1.2em;
+    }
 }
 
 /* 1367-1536 px width settings */
 @media (min-width: 1367px) and (max-width: 1536px) {
+    .banner {
+        font-size: 2.9em;
+    }
+
+    .box-span {
+        font-size: 2.5em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 7%;
+        margin: 1%;
+        font-size: 1.3em;
+    }
+
+    .short {
+        padding: 5%;
+        font-size: 1.3em;
+    }
 }
 
 /* 1537-1920 px width settings */
@@ -99,12 +171,84 @@ section {
 
 /* 1921-2560 px width settings */
 @media (min-width: 1921px) and (max-width: 2560px) {
+    .banner {
+        font-size: 3.5em;
+    }
+
+    .box-span {
+        font-size: 3em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 7%;
+        margin: 1%;
+        font-size: 1.8em;
+    }
+
+    .short {
+        padding: 5%;
+        font-size: 1.8em;
+    }
 }
 
 /* 2561-3840 px width settings */
 @media (min-width: 2561px) and (max-width: 3840px) {
+    .banner {
+        font-size: 5em;
+    }
+
+    .box-span {
+        font-size: 5em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 7%;
+        margin: 1%;
+        font-size: 3em;
+    }
+
+    .short {
+        padding: 5%;
+        font-size: 3em;
+    }
 }
 
 /*  >= 3841px width settings */
 @media (min-width: 3841px) {
+    .banner {
+        font-size: 8em;
+    }
+
+    .box-span {
+        font-size: 5em;
+        margin-right: 7%;
+        font-weight: bold;
+    }
+
+    hr {
+        height: 1.1em;
+    }
+
+    .long {
+        padding: 7%;
+        margin: 1%;
+        font-size: 3em;
+    }
+
+    .short {
+        padding: 5%;
+        font-size: 3em;
+    }
 }
