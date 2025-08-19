@@ -1,16 +1,17 @@
 /* copyright */
 .copyright {
-    background-color: #4c4c4c;
-    color: whitesmoke;
+    background-color: #2c2c2c;
+    color: #ffffff;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* 768-1280 px width settings */
 @media (min-width: 768px) and (max-width: 1280px) {
     .copyright {
-        padding: 1%;
-        font-size: 100%;
+        padding: 1em;
+        font-size: 1rem;
     }
 }
 
@@ -25,23 +26,23 @@
 /* 1921-2560 px width settings */
 @media (min-width: 1921px) and (max-width: 2560px) {
     .copyright {
-        padding: 1%;
-        font-size: 120%;
+        padding: 1em;
+        font-size: 1.2rem;
     }
 }
 
 /* 2561-3840 px width settings */
 @media (min-width: 2561px) and (max-width: 3840px) {
     .copyright {
-        padding: 1%;
-        font-size: 200%;
+        padding: 1em;
+        font-size: 2rem;
     }
 }
 
 /*  >= 3841px width settings */
 @media (min-width: 3841px) {
     .copyright {
-        padding: 1%;
-        font-size: 350%;
+        padding: 1em;
+        font-size: 3.5rem;
     }
 }
