@@ -1,190 +1,88 @@
-/* header */
+/* === HEADER === */
+/* Main header container styles */
 .header {
-    background-color: rgba(255, 255, 255, 1);
+    position: fixed;              /* Sticks header to top */
+    top: 0; left: 0; width: 100%; /* Full width at top */
+    background: #ffffff;          /* White background */
+    border-bottom: 1px solid #e5e7eb; /* Subtle bottom border */
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    overflow: hidden;
-    position: fixed;
-    top: 0; 
-    width: 100%;
-    padding: 8px 2vw;
+    display: flex;                /* Flexbox layout */
+    align-items: center;          /* Vertically center items */
+    justify-content: space-around;/* Evenly space items */
+    padding: 1%;                  /* Responsive padding */
     box-sizing: border-box;
+    z-index: 9999;                /* On top of other elements */
 }
 
-.header a:hover {
-    color: #fc891b;
+/* Logo */
+/* Logo image styles */
+.header img {
+    width: 100%;                  /* Full width by default */
+    height: auto;
+    max-width: 200px;             /* Max width for desktop */
 }
 
-/* menu-items */
+/* Menu */
+/* Menu container styles */
 .menu-items {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
+    align-items: center;          /* Vertically center menu items */
+    justify-content: flex-end;    /* Align menu to right */
+    width: 50%;                   /* Half width for desktop */
 }
 
+/* Menu link styles */
 .menu-items a {
     text-decoration: none;
-    color: #4c4c4c;
-    font-size: 1rem;
-    padding: 0 1vw;
-    transition: color 0.2s;
+    color: #4c4c4c;               /* Default link color */
+    font-size: 115%;              /* Slightly larger font */
+    padding: 0 5%;                /* Horizontal padding */
+    transition: color 0.2s;       /* Smooth color transition */
 }
+.menu-items a:hover { color:#fc891b; } /* Highlight on hover */
 
-/* Responsive settings for all widths */
-.header img {
-    width: 120px;
-    height: auto;
-    max-width: 30vw;
-}
-
-@media (max-width: 767px) {
+/* === TABLET <= 900px === */
+/* Styles for tablets and small screens */
+@media (max-width: 900px){
     .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 4vw 2vw;
+        flex-direction: column;     /* Stack items vertically */
+        align-items: flex-start;    /* Align items to left */
+        padding: 4% 2%;             /* Increased padding */
     }
     .header img {
-        width: 80px;
-        max-width: 50vw;
+        max-width: 120px;           /* Smaller logo */
         margin-bottom: 8px;
     }
     .menu-items {
+        width: 100%;                /* Full width menu */
+        justify-content: flex-start;/* Align menu to left */
+        flex-wrap: wrap;            /* Wrap menu items */
+    }
+    .menu-items a {
+        font-size: 110%;            /* Slightly smaller font */
+        padding: 2% 3%;             /* Adjusted padding */
+        display: block;             /* Block display for stacking */
+    }
+}
+
+/* === MOBILE <= 560px === */
+/* Styles for mobile devices */
+@media (max-width: 560px){
+    .header {
+        text-align: center;         /* Center text */
+        align-items: center;        /* Center items */
+        padding: 5% 3%;             /* More padding */
+    }
+    .header img {
+        max-width: 100px;           /* Small logo */
+        margin: 0 auto 8px auto;    /* Center logo with margin */
+    }
+    .menu-items {
+        justify-content: center;    /* Center menu items */
         width: 100%;
-        justify-content: flex-start;
-        flex-wrap: wrap;
     }
     .menu-items a {
-        font-size: 1.1rem;
-        padding: 6px 2vw;
-        display: block;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1280px) {
-    .header {
-        padding: 1%;
-    }
-    .header img {
-        width: 90%;
-        height: auto;
-        max-width: 180px;
-    }
-    .menu-items {
-        width: 60%;
-    }
-    .menu-items a {
-        font-size: 110%;
-        padding: 0 3% 0 3%;
-    }
-}
-
-@media (min-width: 1281px) and (max-width: 1366px) {
-    .header {
-        padding: 1%;
-    }
-    .header img {
-        width: 100%;
-        height: auto;
-        max-width: 200px;
-    }
-    .menu-items {
-        width: 50%;
-    }
-    .menu-items a {
-        padding: 0 5% 0 5%;
-        font-size: 115%;
-    }
-}
-
-@media (min-width: 1367px) and (max-width: 1536px) {
-    .header {
-        padding: 1%;
-    }
-    .header img {
-        width: 110%;
-        height: auto;
-        max-width: 220px;
-    }
-    .menu-items {
-        width: 55%;
-    }
-    .menu-items a {
-        padding: 0 5% 0 5%;
-        font-size: 125%;
-    }
-}
-
-@media (min-width: 1537px) and (max-width: 1920px) {
-    .header {
-        padding: 1%;
-    }
-    .header img {
-        width: 120%;
-        height: auto;
-        max-width: 240px;
-    }
-    .menu-items {
-        width: 55%;
-    }
-    .menu-items a {
-        padding: 0 5% 0 5%;
-        font-size: 140%;
-    }
-}
-
-@media (min-width: 1921px) and (max-width: 2560px) {
-    .header {
-        padding: 1.5%;
-    }
-    .header img {
-        width: 150%;
-        height: auto;
-        max-width: 300px;
-    }
-    .menu-items {
-        width: 50%;
-    }
-    .menu-items a {
-        font-size: 200%;
-        padding: 0 3% 0 3%;
-    }
-}
-
-@media (min-width: 2561px) and (max-width: 3840px) {
-    .header {
-        padding: 1.5%;
-    }
-    .header img {
-        width: 200%;
-        height: auto;
-        max-width: 400px;
-    }
-    .menu-items {
-        width: 50%;
-    }
-    .menu-items a {
-        font-size: 250%;
-        padding: 0 3% 0 3%;
-    }
-}
-
-@media (min-width: 3841px) {
-    .header {
-        padding: 2%;
-    }
-    .header img {
-        width: 200%;
-        height: auto;
-        max-width: 500px;
-    }
-    .menu-items {
-        width: 50%;
-    }
-    .menu-items a {
-        font-size: 350%;
-        padding: 0 3% 0 3%;
+        font-size: 120%;            /* Larger font for touch */
+        padding: 3% 3%;             /* Larger touch area */
     }
 }
