@@ -1,26 +1,31 @@
 /* ============ VARIABLES ============ */
-/* CSS custom properties for easy theme/config changes */
+/* Global CSS variables for layout and sizing */
 :root{
     /* global page */
-    --page-max: 1920px;      /* Maximum page width */
+    --page-max: 1920px; /* Maximum page width */
 
-    /* box1 - tiles */
-    --card-w: 264px;         /* Card width */
-    --card-h: 330px;         /* Card height */
-    --row-gap: 26px;         /* Gap between rows */
+    /* box1 – tiles */
+    --card-w: 264px;    /* Tile/card width */
+    --card-h: 330px;    /* Tile/card height */
+    --row-gap: 26px;    /* Gap between rows */
 
-    --img-box: 176px;        /* Image box size */
-    --img-pad: 18px;         /* Image padding */
+    --img-box: 176px;   /* Image box size */
+    --img-pad: 18px;    /* Image padding */
 
-    --label-fs: 20px;        /* Label font size */
-    --line-h: 1.15;          /* Line height (unitless) */
-    --label-gap: 9px;        /* Gap above label */
+    --label-fs: 20px;   /* Label font size */
+    --line-h: 1.15;     /* Line height */
+    --label-gap: 9px;   /* Gap above label */
 
-    --link-pad: 9px;         /* Link padding */
+    --link-pad: 9px;    /* Link padding */
+
+    /* box2 – fixed dimensions (+20%) compared to original calculations */
+    --box2-card-w: 665px;  /* 554px * 1.2, card width */
+    --box2-card-h: 396px;  /* 330px * 1.2, card height */
+    --box2-fs: 16px;       /* Font size for box2 */
 }
 
 /* ============ BASE / LAYOUT ============ */
-/* Universal box-sizing for predictable sizing */
+/* Basic layout and body styling */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -30,13 +35,11 @@ body {
     font-family: 'Helvetica', system-ui, -apple-system, Arial, sans-serif;
     color: #4c4c4c;
 
-    /* Global max width and horizontal centering */
     max-width: var(--page-max);
     width: 100%;
-    margin-inline: auto;
+    margin-inline: auto; /* Center page horizontally */
 }
 
-/* Center section content vertically and horizontally */
 section {
     display: flex;
     height: 100vh;
@@ -45,29 +48,30 @@ section {
 }
 
 /* ============ BOX 1 (tiles) ============ */
+/* Container for tile/cards */
 .box1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;      /* Vertical centering within section */
+    align-items: center;
     gap: var(--row-gap);
     background-color: #4c4c4c;
     padding: 16px 0;
 }
 
-/* Individual tile styling */
+/* Individual tile/card styling */
 .box1-item{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  /* Center tile content vertically */
+    justify-content: center;
     text-align: center;
 
     width: var(--card-w);
     height: var(--card-h);
 }
 
-/* Link inside tile */
+/* Link inside tile/card */
 .box1-item a{
     text-decoration: none;
     display: block;
@@ -76,7 +80,7 @@ section {
     padding: var(--link-pad);
 }
 
-/* Second link (label) – single line with ellipsis */
+/* Last link in tile/card, ellipsis for overflow */
 .box1-item a:last-of-type{
     overflow: hidden;
     white-space: nowrap;
@@ -84,9 +88,9 @@ section {
     padding-top: var(--label-gap);
 }
 
-/* Tile image styling */
+/* Image inside tile/card */
 .box1-item img{
-    display: block;                 /* Removes baseline gap */
+    display: block;
     margin: 0 auto;
     width: var(--img-box);
     height: var(--img-box);
@@ -96,22 +100,89 @@ section {
 
     border-radius: 30%;
     background-color: rgba(245, 245, 245, 0.9);
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5),
-                            inset 0 0 0 5px rgba(255, 255, 255, 0.2);
+    box-shadow:
+        0 0 0 5px rgba(0, 0, 0, 0.5),
+        inset 0 0 0 5px rgba(255, 255, 255, 0.2);
 }
-/* Shake animation on image hover */
+/* Shake animation on hover */
 .box1-item img:hover { animation: shake 0.3s; }
 
-/* Text below icon */
+/* Label styling */
 .box1-item span{
     color: #fc891b;
     display: inline;
     font-size: var(--label-fs);
     line-height: var(--line-h);
 }
-/* Change text color on hover */
+/* Label hover effect */
 .box1-item span:hover { color: whitesmoke; }
 
+/* ============ BOX 2 (text + image) ============ */
+/* Container – like box1, but no gaps between items */
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* horizontal alignment */
+    align-items: center;      /* vertical alignment (single row) */
+    align-content: center;    /* vertical alignment for multiple rows */
+    gap: 0;
+    background-color: whitesmoke;
+    padding: 16px 0;
+}
+
+/* Text card – fixed size, horizontal layout, no scroll */
+.box2-item{
+    display: flex;
+    flex-direction: row;      /* horizontal */
+    align-items: stretch;     /* child fills card height */
+    justify-content: center;  /* horizontal centering */
+    text-align: center;
+    gap: 0;
+
+    width:  var(--box2-card-w);
+    height: var(--box2-card-h);
+    padding: 0;               /* nothing takes card height */
+    margin: 0;
+}
+
+/* Remove margins from children in card */
+.box2-item > *{ margin: 0; }
+
+/* Paragraph content – fills card, trims overflow */
+.box2-item p{
+    height: 100%;
+    max-width: 100%;
+    padding: var(--link-pad);
+    box-sizing: border-box;
+
+    font-size: var(--box2-fs);
+    line-height: var(--line-h);
+    color: #4c4c4c;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 2%;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* With current variables, about 20 lines – adjust if parameters change */
+    -webkit-line-clamp: 20;
+    line-clamp: 20;
+    white-space: normal;
+}
+
+/* Image card – fixed size, centering, cropping */
+.box2 > img{
+    display: block;
+    width:  var(--box2-card-w);
+    height: var(--box2-card-h);
+    object-fit: cover;
+    object-position: center center;
+    margin: 0;
+    padding: 0;
+    align-self: center; /* vertical alignment in row */
+}
+
+/* ============ ANIMATIONS / ACCESSIBILITY ============ */
 /* Shake animation keyframes */
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -127,76 +198,7 @@ section {
     100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
 }
 
-/* ============ BOX 2 (text + image) ============ */
-.box2{
-    display: flex;
-    align-items: center;
-    background-color: whitesmoke;
-}
-
-/* Text color for box2 */
-.box2-item { color: #4c4c4c; }
-.box2-item span { color: whitesmoke; }
-
-/* Paragraph styling in box2 */
-.box2-item p{
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 2%;
-}
-
-/* ============ RESPONSIVENESS (for .box2 – your values) ============ */
-
-/* 768–1280 px: Adjust image and text sizes for tablets/small desktops */
-@media (min-width: 768px) and (max-width: 1280px) {
-    .box2 img { width: 130%; height: auto; padding-right: 5%; }
-    .box2-item { padding-left: 5%; }
-    .box2-item p { padding: 5%; font-size: 80%; }
-}
-
-/* 1281–1366 px: Slightly smaller image */
-@media (min-width: 1281px) and (max-width: 1366px) {
-    .box2 img { width: 115%; height: auto; padding-right: 5%; }
-    .box2-item { padding-left: 5%; }
-    .box2-item p { padding: 5%; font-size: 80%; }
-}
-
-/* 1367–1536 px: Standard desktop */
-@media (min-width: 1367px) and (max-width: 1536px) {
-    .box2 img { width: 80%; height: auto; padding-right: 5%; }
-    .box2-item { padding-left: 5%; }
-    .box2-item p { padding: 5%; font-size: 80%; }
-}
-
-/* 1537–1920 px: Large desktop */
-@media (min-width: 1537px) and (max-width: 1920px) {
-    .box2 img { width: 80%; height: auto; padding-right: 5%; }
-    .box2-item { padding-left: 5%; }
-    .box2-item p { padding: 5%; }
-}
-
-/* 1921–2560 px: Extra large screens */
-@media (min-width: 1921px) and (max-width: 2560px) {
-    .box2 img { width: 90%; height: auto; padding-right: 5%; }
-    .box2-item { padding-left: 5%; }
-    .box2-item p { padding: 5%; font-size: 135%; }
-}
-
-/* 2561–3840 px: 4K screens */
-@media (min-width: 2561px) and (max-width: 3840px) {
-    .box2 img { width: 75%; height: auto; padding-right: 5%; }
-    .box2-item { padding-left: 5%; }
-    .box2-item p { padding: 5%; font-size: 200%; }
-}
-
-/* ≥ 3841 px: Ultra-wide screens */
-@media (min-width: 3841px) {
-    .box2 img { width: auto; height: 50%; padding-right: 5%; }
-    .box2-item { padding-left: 3%; }
-    .box2-item p { padding: 5%; font-size: 350%; }
-}
-
-/* ============ ACCESSIBILITY ============ */
-/* Disable animation for users who prefer reduced motion */
+/* Accessibility: disable animation if user prefers reduced motion */
 @media (prefers-reduced-motion: reduce){
     .box1-item img:hover { animation: none; }
 }
