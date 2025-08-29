@@ -1,88 +1,110 @@
-/* === HEADER === */
-/* Main header container styles */
+:root {
+    /* Define a CSS variable for the maximum page width */
+    --page-max: 1920px;
+}
+
 .header {
-    position: fixed;              /* Sticks header to top */
-    top: 0; left: 0; width: 100%; /* Full width at top */
-    background: #ffffff;          /* White background */
-    border-bottom: 1px solid #e5e7eb; /* Subtle bottom border */
-    margin: 0;
-    display: flex;                /* Flexbox layout */
-    align-items: center;          /* Vertically center items */
-    justify-content: space-around;/* Evenly space items */
-    padding: 1%;                  /* Responsive padding */
-    box-sizing: border-box;
-    z-index: 9999;                /* On top of other elements */
-}
-
-/* Logo */
-/* Logo image styles */
-.header img {
-    width: 100%;                  /* Full width by default */
-    height: auto;
-    max-width: 200px;             /* Max width for desktop */
-}
-
-/* Menu */
-/* Menu container styles */
-.menu-items {
+    /* Set font family for header */
+    font-family: 'Helvetica', system-ui, -apple-system, Arial, sans-serif;
+    /* Set text color */
+    color: #4c4c4c;
+    /* Limit header width and center it */
+    max-width: var(--page-max);
+    width: 100%;
+    margin-inline: auto;
+    /* Fix header to top of page */
+    position: fixed;
+    /* Set background and border */
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    /* Use flexbox for layout */
     display: flex;
-    align-items: center;          /* Vertically center menu items */
-    justify-content: flex-end;    /* Align menu to right */
-    width: 50%;                   /* Half width for desktop */
+    align-items: center;
+    justify-content: space-around;
+    /* Add padding and box sizing */
+    padding: 1%;
+    box-sizing: border-box;
+    /* Ensure header stays above other elements */
+    z-index: 9999;
 }
 
-/* Menu link styles */
+.header img {
+    /* Make logo responsive */
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+.menu-items {
+    /* Flexbox for menu items */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
 .menu-items a {
+    /* Style menu links */
     text-decoration: none;
-    color: #4c4c4c;               /* Default link color */
-    font-size: 115%;              /* Slightly larger font */
-    padding: 0 5%;                /* Horizontal padding */
-    transition: color 0.2s;       /* Smooth color transition */
+    color: #4c4c4c;
+    font-size: 115%;
+    padding: 0 5%;
+    transition: color 0.2s;
 }
-.menu-items a:hover { color:#fc891b; } /* Highlight on hover */
 
-/* === TABLET <= 900px === */
-/* Styles for tablets and small screens */
-@media (max-width: 900px){
+.menu-items a:hover {
+    /* Change link color on hover */
+    color: #fc891b;
+}
+
+/* Responsive styles for screens <= 900px */
+@media (max-width: 900px) {
     .header {
-        flex-direction: column;     /* Stack items vertically */
-        align-items: flex-start;    /* Align items to left */
-        padding: 4% 2%;             /* Increased padding */
+        /* Stack header elements vertically */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4% 2%;
     }
     .header img {
-        max-width: 120px;           /* Smaller logo */
+        /* Reduce logo size */
+        max-width: 120px;
         margin-bottom: 8px;
     }
     .menu-items {
-        width: 100%;                /* Full width menu */
-        justify-content: flex-start;/* Align menu to left */
-        flex-wrap: wrap;            /* Wrap menu items */
+        /* Expand menu to full width and wrap items */
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
     .menu-items a {
-        font-size: 110%;            /* Slightly smaller font */
-        padding: 2% 3%;             /* Adjusted padding */
-        display: block;             /* Block display for stacking */
+        /* Adjust link size and spacing */
+        font-size: 110%;
+        padding: 2% 3%;
+        display: block;
     }
 }
 
-/* === MOBILE <= 560px === */
-/* Styles for mobile devices */
-@media (max-width: 560px){
+/* Responsive styles for screens <= 560px */
+@media (max-width: 560px) {
     .header {
-        text-align: center;         /* Center text */
-        align-items: center;        /* Center items */
-        padding: 5% 3%;             /* More padding */
+        /* Center header content */
+        text-align: center;
+        align-items: center;
+        padding: 5% 3%;
     }
     .header img {
-        max-width: 100px;           /* Small logo */
-        margin: 0 auto 8px auto;    /* Center logo with margin */
+        /* Further reduce logo size and center it */
+        max-width: 100px;
+        margin: 0 auto 8px auto;
     }
     .menu-items {
-        justify-content: center;    /* Center menu items */
+        /* Center menu items */
+        justify-content: center;
         width: 100%;
     }
     .menu-items a {
-        font-size: 120%;            /* Larger font for touch */
-        padding: 3% 3%;             /* Larger touch area */
+        /* Increase link size and adjust padding */
+        font-size: 120%;
+        padding: 3% 3%;
     }
 }
