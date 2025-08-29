@@ -1,48 +1,58 @@
-/* copyright */
+/* === COPYRIGHT SECTION STYLES === */
 .copyright {
-    background-color: #2c2c2c;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #2c2c2c; /* Dark background */
+    color: #ffffff;            /* White text */
+    display: flex;             /* Flexbox layout */
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    text-align: center;        /* Center text */
+    line-height: 1.4;          /* Line height for readability */
 }
 
-/* 768-1280 px width settings */
+/* --- Mobile: up to 767px --- */
+@media (max-width: 767px) {
+    .copyright {
+        padding: 0.8em;          /* Padding for small screens */
+        font-size: 0.9rem;       /* Slightly smaller font */
+    }
+}
+
+/* --- Tablets & Small Desktops: 768–1280px --- */
 @media (min-width: 768px) and (max-width: 1280px) {
     .copyright {
-        padding: 1em;
-        font-size: 1rem;
+        padding: 1em;            /* Standard padding */
+        font-size: 1rem;         /* Standard font size */
     }
 }
 
-/* 1281-1920 px width settings */
+/* --- Medium Desktops: 1281–1920px --- */
 @media (min-width: 1281px) and (max-width: 1920px) {
     .copyright {
-        padding: 1%;
-        font-size: 100%;
+        padding: 1%;             /* Responsive padding */
+        font-size: 100%;         /* Default font size */
     }
 }
 
-/* 1921-2560 px width settings */
+/* --- Large Desktops: 1921–2560px --- */
 @media (min-width: 1921px) and (max-width: 2560px) {
     .copyright {
-        padding: 1em;
-        font-size: 1.2rem;
+        padding: 1em;            /* Standard padding */
+        font-size: 1.2rem;       /* Larger font size */
     }
 }
 
-/* 2561-3840 px width settings */
+/* --- Extra Large Screens: 2561–3840px --- */
 @media (min-width: 2561px) and (max-width: 3840px) {
     .copyright {
-        padding: 1em;
-        font-size: 2rem;
+        padding: 1em;            /* Standard padding */
+        font-size: 2rem;         /* Much larger font size */
     }
 }
 
-/*  >= 3841px width settings */
+/* --- Ultra Wide Screens: ≥3841px --- */
 @media (min-width: 3841px) {
     .copyright {
-        padding: 1em;
-        font-size: 3.5rem;
+        padding: 1em;            /* Standard padding */
+        font-size: 3.5rem;       /* Very large font size */
     }
 }
